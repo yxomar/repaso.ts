@@ -1,13 +1,18 @@
 function hasEven(myNums){
-    let i = 0
+    let respuesta = "";
+    let i = 0;
     while(i< myNums.length){
        if(myNums[i]%2==0){
-        return `hay numeros pares `
+        respuesta = "hay numeros pares"
+       }
+       else{
+        respuesta = "no hay numeros pares"
        }
       i++ 
     } 
+    return respuesta
 }
-let numeros = [1,3,4,5,6,7,8,9]
+let numeros = [1,2,3,4]
 console.log(hasEven(numeros));
 
 function startWith(myName){
@@ -21,5 +26,5 @@ function startWith(myName){
     }
     return x;
 }
-let nombres = ["Minguito", "Marcos", "Marian"]
+let nombres = ["pepe", "Marcos", "Marian"]
 console.log(startWith(nombres));

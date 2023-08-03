@@ -56,4 +56,4 @@ export function isEven(numero : number){
       return `El ${numero}, es numero impar.`
     }    
 }
-console.log(isEven(7));
+console.log(isEven(8));
